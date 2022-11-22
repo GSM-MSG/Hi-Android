@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/real_nameFragment">
+
+    <fragment
+        android:id="@+id/real_nameFragment"
+        android:name="com.example.hiprojecttest.fragment.RealNameFragment"
+        android:label="fragment_real_name"
+        tools:layout="@layout/fragment_real_name" >
+        <action
+            android:id="@+id/action_real_nameFragment_to_e_mailFragment"
+            app:destination="@id/e_mailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/e_mailFragment"
+        android:name="com.example.hiprojecttest.fragment.EmailFragment"
+        android:label="fragment_e_mail"
+        tools:layout="@layout/fragment_e_mail" >
+        <action
+            android:id="@+id/action_e_mailFragment_to_emailProveFragment"
+            app:destination="@id/emailProveFragment" />
+        <action
+            android:id="@+id/action_e_mailFragment_to_real_nameFragment"
+            app:destination="@id/real_nameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailProveFragment"
+        android:name="com.example.hiprojecttest.fragment.EmailProveFragment"
+        android:label="fragment_email_prove"
+        tools:layout="@layout/fragment_email_prove" >
+        <action
+            android:id="@+id/action_emailProveFragment_to_e_mailFragment"
+            app:destination="@id/e_mailFragment" />
+        <action
+            android:id="@+id/action_emailProveFragment_to_makingPassFragment"
+            app:destination="@id/makingPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makingPassFragment"
+        android:name="com.example.hiprojecttest.fragment.MakingPassFragment"
+        android:label="fragment_making_pass"
+        tools:layout="@layout/fragment_making_pass" >
+        <action
+            android:id="@+id/action_makingPassFragment_to_emailProveFragment"
+            app:destination="@id/emailProveFragment" />
+        <action
+            android:id="@+id/action_makingPassFragment_to_lastSinUpFragment"
+            app:destination="@id/lastSinUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastSinUpFragment"
+        android:name="com.example.hiprojecttest.fragment.LastSinUpFragment"
+        android:label="fragment_last_sin_up"
+        tools:layout="@layout/fragment_last_sin_up" />
+</navigation>

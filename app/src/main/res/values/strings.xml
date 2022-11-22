@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hi project(test)</string>
+    <string name="log_in_go">로그인하기</string>
+    <string name="sin_up_go">회원가입하기</string>
+    <string name="welcome_big_text">반가워요!</string>
+    <string name="welcome_small_text">Hi에서 홈베이스 신청을\n온라인으로 쉽게 해보아요</string>
+    <string name="welcome_sin_up">처음이신가요?</string>
+    <string name="welcome_Hi">Hi에 오신걸 환영해요!</string>
+    <string name="what_is_name">이름을 알려주실래요?</string>
+    <string name="name_edit">실명을 입력해주세요</string>
+    <string name="next_stage">다음 단계로 가볼까요?</string>
+    <string name="email_input_title">이메일 인증하기</string>
+    <string name="email_input_subtitle">보안을 위해 이메일 인증이 필요해요!</string>
+    <string name="email_too_input">이메일도 알려주세요!</string>
+    <string name="ex_email">이메일을 입력해주세요</string>
+    <string name="post_email">인증번호 발급</string>
+    <string name="erly_finish">얼마 안 남았어요!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_prove_text">알려주신 이메일로 인증번호를 보냈어요!</string>
+    <string name="email_prove_text_1">인증번호는 여기에 써주세요!</string>
+    <string name="email_prove_hint">인증번호를 입력해주세요</string>
+    <string name="repost_email">다시 받기</string>
+    <string name="bigTitle_making_pass">비밀번호 만들기</string>
+    <string name="smallTilte_making_pass">아무도 모를 비밀번호를 만들어주세요!</string>
+    <string name="smallText_making_pass">비밀번호를 알려주세요!</string>
+    <string name="input_pass">비밀번호를 입력해주세요</string>
+    <string name="reinput_pass">다시 한 번 말해주실래요?</string>
+    <string name="last_sinup">회원가입하기</string>
+    <string name="login_bigTiltle">돌아오셨네요!</string>
+    <string name="login_smallTiltle">다시 만나서 반가워요!</string>
+    <string name="smallText_pass">비밀번호를 써주세요!</string>
+    <string name="login_go">로그인하기</string>
+</resources>

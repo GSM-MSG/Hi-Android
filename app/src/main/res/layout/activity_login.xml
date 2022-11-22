@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- 뒤로가기 버튼 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.017"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.057"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <ImageButton
+        android:id="@+id/goBackButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backtracking_button_image"
+        app:layout_constraintStart_toStartOf="@id/goBackGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/goBackGuide_hor_bottom"/>
+    <!-- 텍스트 인풋 공용 라인 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textAndInputGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.056"/>
+    <!-- 가장 큰 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.137"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58"/>
+
+    <TextView
+        android:id="@+id/bigTiltleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/login_bigTiltle"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/bigTextGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/bigTextGuide_hor_bottom"
+        android:fontFamily="@font/pretendard_extrabold"
+        android:textSize="32.64sp"
+        android:textColor="@color/black"/>
+    <!-- 좀 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTitleTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.163"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTitleTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.433"/>
+
+    <TextView
+        android:id="@+id/smallTitleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/login_smallTiltle"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/smallTitleTextGuide_ver_right"
+        app:layout_constraintBottom_toBottomOf="@id/smallTitleTextGuide_hor_bottom"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
+        android:fontFamily="@font/pretendard_semibold"
+        android:textSize="15.36sp"
+        android:textColor="@color/hint_black1"/>
+    <!-- 이메일 인풋 위 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.356"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.323"/>
+
+    <TextView
+        android:id="@+id/smallText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/email_too_input"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/smallTextGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide_hor_bottom"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"/>
+
+    <!-- 인풋 이메일 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/emailInputGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.412"/>
+
+    <EditText
+        android:id="@+id/input_text_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/ex_email"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/InputGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide_hor_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/emailInputGuide_hor_bottom"
+        android:textColorHint="@color/hint_black1"
+        android:inputType="textEmailAddress"/>
+    <!-- 인풋창 공용 가이드 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/InputGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.947"/>
+    <!-- 비밀번호 위 인풋 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.439"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.464"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.341"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/smallText_pass"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/smallTextGuide2_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide2_hor_bottom"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        android:textColor="@color/hint_black2"/>
+    <!-- 비밀번호 입력란 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputPassGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.518"/>
+
+    <EditText
+        android:id="@+id/input_Pass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/input_pass"
+        app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/InputGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/inputPassGuide_hor_bottom"
+        android:textColorHint="@color/hint_black1"
+        android:inputType="textPassword"/>
+    <!-- 유일한 버튼 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextStageBtnGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.889"/>
+
+    <Button
+        android:id="@+id/next_stage_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nextStageBtnGuide_hor_top"
+        android:background="@color/hint_black1"
+        android:text="@string/login_go"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_semibold"
+        android:textSize="23sp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

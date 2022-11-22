@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MakingPassFragment">
+
+    <!--뒤로가기 버튼-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.22"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06"/>
+    <!--텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TextGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <!-- 가장 큰 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.092"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.143"/>
+    <!-- 좀 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/littelTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/littelTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.169"/>
+    <!-- 비밀번호 위 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.338"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.354"/>
+    <!-- 비밀번호 입력란 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passInputGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passInputGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.411"/>
+    <!-- 비밀번호 확인란 위 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.443"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.468"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGUide2_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"/>
+    <!-- 비밀번호 확인란 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reinputPassGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"/>
+    <!-- 버튼-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextStageBtnGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8954"/>
+
+    <ImageButton
+        android:id="@+id/goBackButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backtracking_button_image"
+        app:layout_constraintStart_toStartOf="@id/goBackGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/goBackGuide_hor_bottom"/>
+    <TextView
+        android:id="@+id/bigTiltleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/bigTextGuide_hor_bottom"
+        app:layout_constraintEnd_toEndOf="@id/bigTextGuide_ver_right"
+        android:text="@string/bigTitle_making_pass"
+        android:textSize="32.64sp"
+        android:fontFamily="@font/pretendard_extrabold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/smallText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
+        app:layout_constraintEnd_toEndOf="@id/littelTextGuide_ver_right"
+        app:layout_constraintBottom_toBottomOf="@id/littelTextGuide_hor_bottom"
+        android:text="@string/smallTilte_making_pass"
+        android:fontFamily="@font/pretendard_semibold"
+        android:textColor="@color/hint_black1"
+        android:textSize="15.36sp"/>
+    <TextView
+        android:id="@+id/smallText1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/smallTextGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide_hor_bottom"
+        android:text="@string/smallText_making_pass"
+        android:textSize="11sp"
+        android:fontFamily="@font/pretendard_medium"
+        android:textColor="@color/hint_black2"/>
+    <EditText
+        android:id="@+id/inputNewPass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@drawable/focuspoint"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/passInputGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide_hor_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/passInputGuide_hor_bottom"
+        android:hint="@string/input_pass"
+        android:fontFamily="@font/pretendard_medium"
+        android:textSize="16sp"
+        android:textColorHint="@color/hint_black1"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/smallText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/smallTextGUide2_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide2_hor_bottom"
+        android:text="@string/reinput_pass"
+        android:textColorHint="@color/hint_black2"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"/>
+    <EditText
+        android:id="@+id/reinput_pass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@drawable/focuspoint"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/passInputGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/reinputPassGuide_hor_bottom"
+        android:hint="@string/input_pass"
+        android:fontFamily="@font/pretendard_medium"
+        android:textSize="16sp"
+        android:textColorHint="@color/hint_black1"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/next_stage_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nextStageBtnGuide_hor_top"
+        android:background="@color/hint_black1"
+        android:text="@string/last_sinup"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_semibold"
+        android:textSize="23sp"/>
+
+        
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
