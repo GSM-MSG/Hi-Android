@@ -39,6 +39,7 @@ class EmailFragment : Fragment(){
         binding.backTrakingBtn.setOnClickListener {
             navController.navigate(R.id.action_e_mailFragment_to_real_nameFragment)
         }
+        
 
 
     }
