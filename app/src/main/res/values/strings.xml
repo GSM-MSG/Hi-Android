@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hi project(test)</string>
+    <string name="app_name">Hi</string>
     <string name="log_in_go">로그인하기</string>
     <string name="sin_up_go">회원가입하기</string>
     <string name="welcome_big_text">반가워요!</string>

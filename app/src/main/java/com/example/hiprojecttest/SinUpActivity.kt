@@ -18,6 +18,5 @@ class SinUpActivity : AppCompatActivity() {
         navController =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_email)!!.findNavController()
 
-
     }
 }
