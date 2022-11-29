@@ -51,6 +51,9 @@ class RealNameFragment : Fragment() {
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
                 }
             }
+            else if(p0.isNullOrBlank()){
+                binding.nextStageBtn.setBackgroundColor(resources.getColor(R.color.hint_black1))
+            }
         }
 
         binding.backTrakingBtn.setOnClickListener{

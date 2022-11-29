@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.057"/>
+        app:layout_constraintGuide_percent="0.0687"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/goBackGuide_ver_right"
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.137"/>
+        app:layout_constraintGuide_percent="0.15"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bigTextGuide_ver_right"
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.163"/>
+        app:layout_constraintGuide_percent="0.18"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTitleTextGuide_ver_right"
         android:layout_width="match_parent"
@@ -118,7 +118,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.356"/>
+        app:layout_constraintGuide_percent="0.352"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide_ver_right"
         android:layout_width="match_parent"
@@ -144,7 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.412"/>
+        app:layout_constraintGuide_percent="0.425"/>
 
     <EditText
         android:id="@+id/input_text_email"
@@ -170,13 +170,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.439"/>
+        app:layout_constraintGuide_percent="0.43"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide2_hor_bottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.464"/>
+        app:layout_constraintGuide_percent="0.458"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide2_ver_right"
         android:layout_width="match_parent"
@@ -201,7 +201,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.518"/>
+        app:layout_constraintGuide_percent="0.53"/>
 
     <EditText
         android:id="@+id/input_Pass"

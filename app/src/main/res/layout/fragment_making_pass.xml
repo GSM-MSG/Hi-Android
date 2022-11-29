@@ -14,23 +14,23 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.02"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/goBackGuide_ver_right"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.22"/>
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/goBackGuide_hor_top"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02"/>
+        app:layout_constraintGuide_percent="0.017"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/goBackGuide_hor_bottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.06"/>
+        app:layout_constraintGuide_percent="0.0687"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
     <!--텍스트 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/TextGuide_ver_left"
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.143"/>
+        app:layout_constraintGuide_percent="0.154"/>
     <!-- 좀 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/littelTextGuide_ver_right"
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.169"/>
+        app:layout_constraintGuide_percent="0.184"/>
     <!-- 비밀번호 위 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide_ver_right"
@@ -88,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.354"/>
+        app:layout_constraintGuide_percent="0.362"/>
     <!-- 비밀번호 입력란 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/passInputGuide_ver_right"
@@ -101,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.411"/>
+        app:layout_constraintGuide_percent="0.425"/>
     <!-- 비밀번호 확인란 위 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide2_hor_top"
@@ -114,7 +114,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.468"/>
+        app:layout_constraintGuide_percent="0.47"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGUide2_ver_right"
         android:layout_width="match_parent"
@@ -127,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.52"/>
+        app:layout_constraintGuide_percent="0.538"/>
     <!-- 버튼-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/nextStageBtnGuide_hor_top"

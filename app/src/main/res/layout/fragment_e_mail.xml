@@ -8,30 +8,30 @@
     tools:context=".fragment.EmailFragment"
     >
    <!--뒤로가기 버튼-->
-   <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/goBackGuide_ver_left"
-       android:layout_width="match_parent"
-       android:layout_height="1dp"
-       android:orientation="vertical"
-       app:layout_constraintGuide_percent="0.02"/>
-   <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/goBackGuide_ver_right"
-       android:layout_width="match_parent"
-       android:layout_height="1dp"
-       android:orientation="vertical"
-       app:layout_constraintGuide_percent="0.22"/>
-   <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/goBackGuide_hor_top"
-       android:layout_width="match_parent"
-       android:layout_height="1dp"
-       android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.02"/>
-   <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/goBackGuide_hor_bottom"
-       android:layout_width="match_parent"
-       android:layout_height="1dp"
-       android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.06"/>
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/goBackGuide_ver_left"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.02"/>
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/goBackGuide_hor_top"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.017"/>
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/goBackGuide_hor_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.0687"/>
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/goBackGuide_ver_right"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.25"/>
    <!--텍스트 -->
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/TextGuide_ver_left"
@@ -57,14 +57,14 @@
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.143"/>
+       app:layout_constraintGuide_percent="0.154"/>
    <!-- 그 밑에 좀 작은 텍스트 -->
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/smallTextGuide_hor_bottom"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.169"/>
+       app:layout_constraintGuide_percent="0.183"/>
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/smallTextGuide_ver_right"
        android:layout_width="match_parent"
@@ -89,7 +89,7 @@
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.38"/>
+       app:layout_constraintGuide_percent="0.383"/>
    <!-- 인풋 창 -->
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/nameInputGuide_ver_right"
@@ -102,7 +102,7 @@
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.434"/>
+       app:layout_constraintGuide_percent="0.445"/>
    <!-- 다음 단계로 버튼 -->
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/nextStageBtnGuide_hor_top"
