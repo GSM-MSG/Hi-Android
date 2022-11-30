@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
         binding.goBackButton.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.exit_to_right, R.anim.exit_to_right)
         }
 
         binding.inputPass.setOnTextChanged { p0, p1, p2, p3 ->

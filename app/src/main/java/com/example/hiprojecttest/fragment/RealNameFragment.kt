@@ -59,8 +59,11 @@ class RealNameFragment : Fragment() {
         binding.backTrakingBtn.setOnClickListener{
             val intent = Intent(activity,MainActivity::class.java)
             startActivity(intent)
+
         }
     }
+
+
 
 
 }

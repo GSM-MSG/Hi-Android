@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_real_name" >
         <action
             android:id="@+id/action_real_nameFragment_to_e_mailFragment"
-            app:destination="@id/e_mailFragment" />
+            app:destination="@id/e_mailFragment"
+            app:enterAnim="@anim/enter_from_right" />
     </fragment>
 
     <fragment
@@ -22,10 +23,12 @@
         tools:layout="@layout/fragment_e_mail" >
         <action
             android:id="@+id/action_e_mailFragment_to_emailProveFragment"
-            app:destination="@id/emailProveFragment" />
+            app:destination="@id/emailProveFragment"
+            app:enterAnim="@anim/enter_from_right" />
         <action
             android:id="@+id/action_e_mailFragment_to_real_nameFragment"
-            app:destination="@id/real_nameFragment" />
+            app:destination="@id/real_nameFragment"
+            app:enterAnim="@anim/exit_to_right" />
     </fragment>
     <fragment
         android:id="@+id/emailProveFragment"
@@ -34,10 +37,12 @@
         tools:layout="@layout/fragment_email_prove" >
         <action
             android:id="@+id/action_emailProveFragment_to_e_mailFragment"
-            app:destination="@id/e_mailFragment" />
+            app:destination="@id/e_mailFragment"
+            app:enterAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_emailProveFragment_to_makingPassFragment"
-            app:destination="@id/makingPassFragment" />
+            app:destination="@id/makingPassFragment"
+            app:enterAnim="@anim/enter_from_right" />
     </fragment>
     <fragment
         android:id="@+id/makingPassFragment"
@@ -46,10 +51,12 @@
         tools:layout="@layout/fragment_making_pass" >
         <action
             android:id="@+id/action_makingPassFragment_to_emailProveFragment"
-            app:destination="@id/emailProveFragment" />
+            app:destination="@id/emailProveFragment"
+            app:enterAnim="@anim/exit_to_right" />
         <action
             android:id="@+id/action_makingPassFragment_to_lastSinUpFragment"
-            app:destination="@id/lastSinUpFragment" />
+            app:destination="@id/lastSinUpFragment"
+            app:enterAnim="@anim/enter_from_right" />
     </fragment>
     <fragment
         android:id="@+id/lastSinUpFragment"
