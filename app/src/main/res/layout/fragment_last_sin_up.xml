@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="@id/vectorImageGuide_ver_right"
         app:layout_constraintTop_toTopOf="@id/vectorImageGuide_hor_top"
         app:layout_constraintBottom_toBottomOf="@id/vectorImageGuide_hor_bottom"
-        android:background="@drawable/vectorimage"/>
+        android:background="@drawable/cheack_image"/>
 
     <!-- 가장 큰 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
@@ -149,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="@id/buttonGUide_ver_right"
         app:layout_constraintTop_toTopOf="@id/buttonGuide_hor_top"
         app:layout_constraintBottom_toBottomOf="@id/buttonGuide_hor_bottom"
-        android:background="@drawable/buttonrund"
+        android:background="@drawable/button_round"
         android:text="알겠어요"
         android:fontFamily="@font/pretendard_semibold"
         android:textColor="@color/white"

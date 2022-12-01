@@ -9,25 +9,25 @@
     >
    <!--뒤로가기 버튼-->
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/goBackGuide_ver_left"
+      android:id="@+id/backtraking_btn_guide_ver_left"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="vertical"
       app:layout_constraintGuide_percent="0.02"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/goBackGuide_hor_top"
+      android:id="@+id/backtraking_btn_guide_hor_top"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="horizontal"
       app:layout_constraintGuide_percent="0.017"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/goBackGuide_hor_bottom"
+      android:id="@+id/backtraing_btn_guide_hor_bottom"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="horizontal"
       app:layout_constraintGuide_percent="0.0687"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/goBackGuide_ver_right"
+      android:id="@+id/backtraking_btn_guide_ver_right"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="vertical"
@@ -124,10 +124,10 @@
        android:layout_width="0dp"
        android:layout_height="0dp"
        android:background="@drawable/backtracking_button_image"
-       app:layout_constraintStart_toStartOf="@id/goBackGuide_ver_left"
-       app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
-       app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
-       app:layout_constraintBottom_toBottomOf="@id/goBackGuide_hor_bottom"/>
+       app:layout_constraintStart_toStartOf="@id/backtraking_btn_guide_ver_left"
+       app:layout_constraintEnd_toEndOf="@id/backtraking_btn_guide_ver_right"
+       app:layout_constraintTop_toTopOf="@id/backtraking_btn_guide_hor_top"
+       app:layout_constraintBottom_toBottomOf="@id/backtraing_btn_guide_hor_bottom"/>
    <TextView
        android:id="@+id/emailProveMainTiltle"
        android:layout_width="0dp"
@@ -173,7 +173,7 @@
       app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
       app:layout_constraintBottom_toBottomOf="@id/nameInputGuide_hor_bottom"
       android:hint="@string/ex_email"
-       android:backgroundTint="@drawable/focuspoint"
+       android:backgroundTint="@drawable/focus_point"
       android:fontFamily="@font/pretendard_medium"
       android:textSize="16sp"/>
    <Button

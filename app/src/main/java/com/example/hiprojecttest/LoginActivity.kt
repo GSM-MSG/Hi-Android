@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.inputPass.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradientbutton))
+                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
             }
         }
 

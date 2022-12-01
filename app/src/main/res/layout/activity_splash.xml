@@ -35,7 +35,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/splashimage"
+        android:background="@drawable/splash_image"
         app:layout_constraintStart_toStartOf="@id/logoGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/logoGuide_ver_right"
         app:layout_constraintTop_toTopOf="@id/logoGuide_hor_top"

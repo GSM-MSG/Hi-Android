@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="@id/button_guide2"
         app:layout_constraintTop_toTopOf="@id/log_in_guide2"
         app:layout_constraintBottom_toBottomOf="@id/log_in_guide1"
-        android:background="@drawable/buttonrund"
+        android:background="@drawable/button_round"
         android:text="@string/log_in_go"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="@id/button_guide2"
         app:layout_constraintTop_toTopOf="@id/sin_up_guide2"
         app:layout_constraintBottom_toBottomOf="@id/sin_up_guide1"
-        android:background="@drawable/buttonrund"
+        android:background="@drawable/button_round"
         android:text="@string/sin_up_go"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -155,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/welcome_logo1"
         app:layout_constraintBottom_toBottomOf="@id/image_guide"
-        android:background="@drawable/welcome_img"
+        android:background="@drawable/welcome_image"
         />
 
 
