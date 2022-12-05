@@ -15,6 +15,7 @@ class SinUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sinup)
 
+
         navController =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_email)!!.findNavController()
 

@@ -17,11 +17,14 @@ class MainActivity : AppCompatActivity() {
         binding.logInButton.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)
         }
 
         binding.sinUpButton.setOnClickListener{
+
             val intent = Intent(this,SinUpActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)
         }
     }
 
