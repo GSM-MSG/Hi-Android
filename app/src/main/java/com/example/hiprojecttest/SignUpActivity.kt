@@ -7,7 +7,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 
 
-class SinUpActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
     lateinit var navController: NavController
 
 

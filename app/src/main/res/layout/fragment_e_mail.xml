@@ -9,25 +9,25 @@
     >
    <!--뒤로가기 버튼-->
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/backtraking_btn_guide_ver_left"
+      android:id="@+id/backBtnGuideLeft"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="vertical"
       app:layout_constraintGuide_percent="0.02"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/backtraking_btn_guide_hor_top"
+      android:id="@+id/backBtnGuideTop"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="horizontal"
       app:layout_constraintGuide_percent="0.017"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/backtraing_btn_guide_hor_bottom"
+      android:id="@+id/backBtnGuideBottom"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="horizontal"
       app:layout_constraintGuide_percent="0.0687"/>
   <androidx.constraintlayout.widget.Guideline
-      android:id="@+id/backtraking_btn_guide_ver_right"
+      android:id="@+id/backBtnGuideRight"
       android:layout_width="match_parent"
       android:layout_height="1dp"
       android:orientation="vertical"
@@ -41,71 +41,71 @@
        app:layout_constraintGuide_percent="0.05"/>
    <!-- 가장 큰 텍스트 -->
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/bigTextGuide_ver_right"
+       android:id="@+id/titleTextGuideRight"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="vertical"
        app:layout_constraintGuide_percent="0.63"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/bigTextGuide_hor_top"
+       android:id="@+id/titleTextGuideTop"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.092"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/bigTextGuide_hor_bottom"
+       android:id="@+id/titleTextGuideBottom"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.154"/>
    <!-- 그 밑에 좀 작은 텍스트 -->
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/smallTextGuide_hor_bottom"
+       android:id="@+id/subTitleTextGuideBottom"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.183"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/smallTextGuide_ver_right"
+       android:id="@+id/subTitleTextGuideRight"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="vertical"
        app:layout_constraintGuide_percent="0.663"/>
    <!-- 인풋 위의 조금 작은 텍스트 -->
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/smalltextGUide2_ver_right"
+       android:id="@+id/subTextGuideRight"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="vertical"
        app:layout_constraintGuide_percent="0.29"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/smallTextGuide2_hor_top"
+       android:id="@+id/subTextGuideTop"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.359"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/smallTextGuide2_hor_bottom"
+       android:id="@+id/subTextGuideBottom"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.383"/>
    <!-- 인풋 창 -->
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/nameInputGuide_ver_right"
+       android:id="@+id/nameInputBoxGuideRight"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="vertical"
        app:layout_constraintGuide_percent="0.944"/>
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/nameInputGuide_hor_bottom"
+       android:id="@+id/nameInputBoxGuideBottom"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
        app:layout_constraintGuide_percent="0.445"/>
    <!-- 다음 단계로 버튼 -->
    <androidx.constraintlayout.widget.Guideline
-       android:id="@+id/nextStageBtnGuide_hor_top"
+       android:id="@+id/nextStepBtnGuideTop"
        android:layout_width="match_parent"
        android:layout_height="1dp"
        android:orientation="horizontal"
@@ -120,22 +120,22 @@
 
 
    <ImageButton
-       android:id="@+id/backTraking_btn"
+       android:id="@+id/backBtn"
        android:layout_width="0dp"
        android:layout_height="0dp"
        android:background="@drawable/backtracking_button_image"
-       app:layout_constraintStart_toStartOf="@id/backtraking_btn_guide_ver_left"
-       app:layout_constraintEnd_toEndOf="@id/backtraking_btn_guide_ver_right"
-       app:layout_constraintTop_toTopOf="@id/backtraking_btn_guide_hor_top"
-       app:layout_constraintBottom_toBottomOf="@id/backtraing_btn_guide_hor_bottom"/>
+       app:layout_constraintStart_toStartOf="@id/backBtnGuideLeft"
+       app:layout_constraintEnd_toEndOf="@id/backBtnGuideRight"
+       app:layout_constraintTop_toTopOf="@id/backBtnGuideTop"
+       app:layout_constraintBottom_toBottomOf="@id/backBtnGuideBottom"/>
    <TextView
        android:id="@+id/emailProveMainTiltle"
        android:layout_width="0dp"
        android:layout_height="0dp"
       app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-      app:layout_constraintEnd_toEndOf="@id/bigTextGuide_ver_right"
-      app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_top"
-      app:layout_constraintBottom_toBottomOf="@id/bigTextGuide_hor_bottom"
+      app:layout_constraintEnd_toEndOf="@id/titleTextGuideRight"
+      app:layout_constraintTop_toTopOf="@id/titleTextGuideTop"
+      app:layout_constraintBottom_toBottomOf="@id/titleTextGuideBottom"
       android:text="@string/email_input_title"
       android:fontFamily="@font/pretendard_extrabold"
       android:textSize="32.64sp"
@@ -145,9 +145,9 @@
        android:layout_width="0dp"
        android:layout_height="0dp"
       app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-      app:layout_constraintEnd_toEndOf="@id/smallTextGuide_ver_right"
-      app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
-      app:layout_constraintBottom_toBottomOf="@id/smallTextGuide_hor_bottom"
+      app:layout_constraintEnd_toEndOf="@id/subTitleTextGuideRight"
+      app:layout_constraintTop_toTopOf="@id/titleTextGuideBottom"
+      app:layout_constraintBottom_toBottomOf="@id/subTitleTextGuideBottom"
       android:text="@string/email_input_subtitle"
        android:fontFamily="@font/pretendard_semibold"
        android:textColor="@color/hint_black1"
@@ -157,9 +157,9 @@
        android:layout_width="0dp"
        android:layout_height="0dp"
       app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-      app:layout_constraintEnd_toEndOf="@id/smalltextGUide2_ver_right"
-      app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_top"
-      app:layout_constraintBottom_toBottomOf="@id/smallTextGuide2_hor_bottom"
+      app:layout_constraintEnd_toEndOf="@id/subTextGuideRight"
+      app:layout_constraintTop_toTopOf="@id/subTextGuideTop"
+      app:layout_constraintBottom_toBottomOf="@id/subTextGuideBottom"
       android:text="@string/email_too_input"
       android:fontFamily="@font/pretendard_medium"
       android:textSize="11sp"
@@ -169,9 +169,9 @@
        android:layout_width="0dp"
        android:layout_height="0dp"
       app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-      app:layout_constraintEnd_toEndOf="@id/nameInputGuide_ver_right"
-      app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
-      app:layout_constraintBottom_toBottomOf="@id/nameInputGuide_hor_bottom"
+      app:layout_constraintEnd_toEndOf="@id/nameInputBoxGuideRight"
+      app:layout_constraintTop_toTopOf="@id/subTextGuideBottom"
+      app:layout_constraintBottom_toBottomOf="@id/nameInputBoxGuideBottom"
       android:hint="@string/ex_email"
        android:backgroundTint="@drawable/focus_point"
       android:fontFamily="@font/pretendard_medium"
@@ -181,21 +181,21 @@
        android:layout_width="0dp"
        android:layout_height="0dp"
       app:layout_constraintStart_toStartOf="@id/postEmailBtnGuide_ver_right"
-      app:layout_constraintEnd_toEndOf="@id/nameInputGuide_ver_right"
-      app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
-      app:layout_constraintBottom_toBottomOf="@id/nameInputGuide_hor_bottom"
+      app:layout_constraintEnd_toEndOf="@id/nameInputBoxGuideRight"
+      app:layout_constraintTop_toTopOf="@id/subTextGuideBottom"
+      app:layout_constraintBottom_toBottomOf="@id/nameInputBoxGuideBottom"
       android:background="@color/unvisable"
       android:text="@string/post_email"
       android:textColor="@color/yellow"
       android:fontFamily="@font/font"
       android:textSize="15sp"/>
   <Button
-      android:id="@+id/next_stage_btn"
+      android:id="@+id/nextStepBtn"
       android:layout_width="0dp"
       android:layout_height="0dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@id/nextStageBtnGuide_hor_top"
+    app:layout_constraintTop_toTopOf="@id/nextStepBtnGuideTop"
     app:layout_constraintBottom_toBottomOf="parent"
       android:background="@color/hint_black1"
       android:text="@string/erly_finish"

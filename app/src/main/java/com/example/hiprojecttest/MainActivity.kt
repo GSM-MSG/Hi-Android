@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.sinUpButton.setOnClickListener{
 
-            val intent = Intent(this,SinUpActivity::class.java)
+            val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)
         }
