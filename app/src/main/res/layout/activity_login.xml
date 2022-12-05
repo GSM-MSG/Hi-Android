@@ -50,33 +50,33 @@
         app:layout_constraintGuide_percent="0.056"/>
     <!-- 가장 큰 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideTop"
+        android:id="@+id/emailTitleTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.09"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideBottom"
+        android:id="@+id/emailTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.15"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideRight"
+        android:id="@+id/emailTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.58"/>
 
     <TextView
-        android:id="@+id/bigTiltleText"
+        android:id="@+id/TitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/login_bigTiltle"
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/titleTextGuideRight"
-        app:layout_constraintTop_toTopOf="@id/titleTextGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/titleTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/emailTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailTitleTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/emailTitleTextGuideBottom"
         android:fontFamily="@font/pretendard_extrabold"
         android:textSize="32.64sp"
         android:textColor="@color/black"/>
@@ -102,39 +102,39 @@
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/smallTitleTextGuide_ver_right"
         app:layout_constraintBottom_toBottomOf="@id/smallTitleTextGuide_hor_bottom"
-        app:layout_constraintTop_toTopOf="@id/titleTextGuideBottom"
+        app:layout_constraintTop_toTopOf="@id/emailTitleTextGuideBottom"
         android:fontFamily="@font/pretendard_semibold"
         android:textSize="15.36sp"
         android:textColor="@color/hint_black1"/>
     <!-- 이메일 인풋 위 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTextGuide_hor_top"
+        android:id="@+id/passwordSubTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.33"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTitleTextGuideBottom"
+        android:id="@+id/emailSubTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.352"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTitleTextGuideRight"
+        android:id="@+id/emailSubTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.323"/>
 
     <TextView
-        android:id="@+id/smallText"
+        android:id="@+id/subTitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/email_too_input"
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/subTitleTextGuideRight"
-        app:layout_constraintTop_toTopOf="@id/smallTextGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/subTitleTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/emailSubTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/passwordSubTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/emailSubTitleTextGuideBottom"
         android:textSize="12sp"
         android:fontFamily="@font/pretendard_medium"/>
 
@@ -147,13 +147,13 @@
         app:layout_constraintGuide_percent="0.425"/>
 
     <EditText
-        android:id="@+id/input_text_email"
+        android:id="@+id/emailProveInputBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:hint="@string/ex_email"
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/InputGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/subTitleTextGuideBottom"
+        app:layout_constraintTop_toTopOf="@id/emailSubTitleTextGuideBottom"
         app:layout_constraintBottom_toBottomOf="@id/emailInputGuide_hor_bottom"
         android:textColorHint="@color/hint_black1"
         android:inputType="textEmailAddress"/>
@@ -166,13 +166,13 @@
         app:layout_constraintGuide_percent="0.947"/>
     <!-- 비밀번호 위 인풋 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTextGuideTop"
+        android:id="@+id/emailSubTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.43"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTextGuideBottom"
+        android:id="@+id/emailSubTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
@@ -190,8 +190,8 @@
         android:text="@string/smallText_pass"
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/smallTextGuide2_ver_right"
-        app:layout_constraintTop_toTopOf="@id/subTextGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/subTextGuideBottom"
+        app:layout_constraintTop_toTopOf="@id/emailSubTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/emailSubTextGuideBottom"
         android:textSize="12sp"
         android:fontFamily="@font/pretendard_medium"
         android:textColor="@color/hint_black2"/>
@@ -210,7 +210,7 @@
         android:hint="@string/input_pass"
         app:layout_constraintStart_toStartOf="@id/textAndInputGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/InputGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/subTextGuideBottom"
+        app:layout_constraintTop_toTopOf="@id/emailSubTextGuideBottom"
         app:layout_constraintBottom_toBottomOf="@id/inputPassGuide_hor_bottom"
         android:textColorHint="@color/hint_black1"
         android:inputType="textPassword"/>

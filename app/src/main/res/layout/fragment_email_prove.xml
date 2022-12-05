@@ -33,71 +33,71 @@
         app:layout_constraintGuide_percent="0.25"/>
     <!--텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/TextGuide_ver_left"
+        android:id="@+id/textSharingGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05"/>
     <!-- 가장 큰 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideRight"
+        android:id="@+id/emailTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.63"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideTop"
+        android:id="@+id/emailTitleTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.092"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/titleTextGuideBottom"
+        android:id="@+id/emailTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.155"/>
     <!-- 그 밑에 좀 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTitleTextGuideBottom"
+        android:id="@+id/emailSubTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.187"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTitleTextGuideRight"
+        android:id="@+id/emailSubTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.675"/>
     <!-- 인풋 위의 조금 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTextGuideRight"
+        android:id="@+id/emailSubTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.37"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTextGuideTop"
+        android:id="@+id/emailSubTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.359"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/subTextGuideBottom"
+        android:id="@+id/emailSubTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.384"/>
     <!-- 인풋 창 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/nameInputBoxGuideRight"
+        android:id="@+id/certificationInputBoxGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.944"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/nameInputBoxGuideBottom"
+        android:id="@+id/certificationInputBoxGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
@@ -111,7 +111,7 @@
         app:layout_constraintGuide_percent="0.896"/>
     <!-- 이메일 전송 버튼 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/postEmailBtnGuide_ver_right"
+        android:id="@+id/reSendEmailBtnLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
@@ -128,61 +128,61 @@
         app:layout_constraintTop_toTopOf="@id/backBtnGuideTop"
         app:layout_constraintBottom_toBottomOf="@id/backBtnGuideBottom"/>
     <TextView
-        android:id="@+id/emailProveMainTiltle"
+        android:id="@+id/emailProveTitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/titleTextGuideRight"
-        app:layout_constraintTop_toTopOf="@id/titleTextGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/titleTextGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/emailTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailTitleTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/emailTitleTextGuideBottom"
         android:text="@string/email_input_title"
         android:fontFamily="@font/pretendard_extrabold"
         android:textSize="32.64sp"
         android:textColor="@color/black"/>
     <TextView
-        android:id="@+id/emailProveSubTitle"
+        android:id="@+id/emailProveSubTilteText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/subTitleTextGuideRight"
-        app:layout_constraintTop_toTopOf="@id/titleTextGuideBottom"
-        app:layout_constraintBottom_toBottomOf="@id/subTitleTextGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/emailSubTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailTitleTextGuideBottom"
+        app:layout_constraintBottom_toBottomOf="@id/emailSubTitleTextGuideBottom"
         android:text="@string/email_prove_text"
         android:fontFamily="@font/pretendard_semibold"
         android:textColor="@color/hint_black1"
         android:textSize="15.6sp"/>
     <TextView
-        android:id="@+id/emailProveSUbSubTitle"
+        android:id="@+id/emailProveSubText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/subTextGuideRight"
-        app:layout_constraintTop_toTopOf="@id/subTextGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/subTextGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/emailSubTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailSubTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/emailSubTextGuideBottom"
         android:text="@string/email_prove_text_1"
         android:fontFamily="@font/pretendard_medium"
         android:textSize="11sp"
         android:textColor="@color/hint_black2"/>
     <EditText
-        android:id="@+id/input_text_email"
+        android:id="@+id/emailProveInputBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/nameInputBoxGuideRight"
-        app:layout_constraintTop_toTopOf="@id/subTextGuideBottom"
-        app:layout_constraintBottom_toBottomOf="@id/nameInputBoxGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/certificationInputBoxGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailSubTextGuideBottom"
+        app:layout_constraintBottom_toBottomOf="@id/certificationInputBoxGuideBottom"
         android:hint="@string/email_prove_hint"
         android:backgroundTint="@drawable/focus_point"
         android:fontFamily="@font/pretendard_medium"
         android:textSize="16sp"/>
     <Button
-        android:id="@+id/repost_email"
+        android:id="@+id/reSendEmailBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/postEmailBtnGuide_ver_right"
-        app:layout_constraintEnd_toEndOf="@id/nameInputBoxGuideRight"
-        app:layout_constraintTop_toTopOf="@id/subTextGuideBottom"
-        app:layout_constraintBottom_toBottomOf="@id/nameInputBoxGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/reSendEmailBtnLeft"
+        app:layout_constraintEnd_toEndOf="@id/certificationInputBoxGuideRight"
+        app:layout_constraintTop_toTopOf="@id/emailSubTextGuideBottom"
+        app:layout_constraintBottom_toBottomOf="@id/certificationInputBoxGuideBottom"
         android:background="@color/unvisable"
         android:text="@string/repost_email"
         android:textColor="@color/yellow"

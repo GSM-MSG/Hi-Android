@@ -8,70 +8,72 @@
 
     <!-- 이미지 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vectorImageGuide_ver_left"
+        android:id="@+id/lastImageGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.3"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vectorImageGuide_ver_right"
+        android:id="@+id/lastImageGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.69"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vectorImageGuide_hor_top"
+        android:id="@+id/lastImageGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.22"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vectorImageGuide_hor_bottom"
+        android:id="@+id/lastImageGuidebottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.398"/>
     <ImageView
+        android:id="@+id/lastImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/vectorImageGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/vectorImageGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/vectorImageGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/vectorImageGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/lastImageGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/lastImageGuideRight"
+        app:layout_constraintTop_toTopOf="@id/lastImageGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/lastImageGuidebottom"
         android:background="@drawable/cheack_image"/>
 
     <!-- 가장 큰 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTiltleTextGuide_ver_left"
+        android:id="@+id/titleTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.34"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTiltleTextGuide_ver_right"
+        android:id="@+id/titleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.65"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTiltleTextGuide_hor_top"
+        android:id="@+id/titleTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.42"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTiltleTextGuide_hor_bottom"
+        android:id="@+id/titleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.466"/>
     <TextView
+        android:id="@+id/titleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/bigTiltleTextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/bigTiltleTextGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/bigTiltleTextGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/bigTiltleTextGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/titleTextGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/titleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/titleTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/titleTextGuideBottom"
         android:text="가입 완료!"
         android:fontFamily="@font/pretendard_extrabold"
         android:textSize="27sp"
@@ -80,36 +82,37 @@
 
     <!-- 작은 타이틀 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTiltleTextGuide_ver_left"
+        android:id="@+id/subTitleTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.21"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTiltleTextGuide_ver_right"
+        android:id="@+id/subTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.78"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTiltleTextGuide_hor_top"
+        android:id="@+id/subTitleTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.474"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTiltleTextGuide_hor_bottom"
+        android:id="@+id/subTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.54"/>
     <TextView
+        android:id="@+id/subTitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/smallTiltleTextGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/smallTiltleTextGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/smallTiltleTextGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/smallTiltleTextGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/subTitleTextGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/subTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/subTitleTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/subTitleTextGuideBottom"
         android:text="다시 한번 환영해요! \n 이제 Hi를 이용해 볼까요?"
         android:gravity="center"
         android:fontFamily="@font/pretendard_medium"
@@ -118,37 +121,37 @@
 
     <!-- 버튼 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuide_ver_left"
+        android:id="@+id/nextStepBtnGuideLeft"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.03"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGUide_ver_right"
+        android:id="@+id/nextStepBtnGuideRight"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.964"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuide_hor_top"
+        android:id="@+id/nextStepBtnGuideTop"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.692"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuide_hor_bottom"
+        android:id="@+id/nextStepBtnGuideBottom"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.77"/>
     <Button
-        android:id="@+id/nextStageBtn"
+        android:id="@+id/nextStepBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/buttonGuide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/buttonGUide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/buttonGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/buttonGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/nextStepBtnGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/nextStepBtnGuideRight"
+        app:layout_constraintTop_toTopOf="@id/nextStepBtnGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/nextStepBtnGuideBottom"
         android:background="@drawable/button_round"
         android:text="알겠어요"
         android:fontFamily="@font/pretendard_semibold"

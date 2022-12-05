@@ -10,18 +10,18 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.hiprojecttest.MainActivity
 import com.example.hiprojecttest.R
-import com.example.hiprojecttest.databinding.FragmentLastSinUpBinding
-import com.example.hiprojecttest.databinding.FragmentMakingPassBinding
+import com.example.hiprojecttest.databinding.FragmentLastSignUpBinding
+
 
 
 class LastSinUpFragment : Fragment() {
     lateinit var navController: NavController
-    private lateinit var binding: FragmentLastSinUpBinding
+    private lateinit var binding: FragmentLastSignUpBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding =FragmentLastSinUpBinding.inflate(inflater,container,false)
+        binding = FragmentLastSignUpBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -29,7 +29,7 @@ class LastSinUpFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
-        binding.nextStageBtn.setOnClickListener {
+        binding.nextStepBtn.setOnClickListener {
             val intent = Intent(activity,MainActivity::class.java)
             startActivity(intent)
         }
