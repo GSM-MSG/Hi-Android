@@ -29,7 +29,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SinUpActivity"
+            android:name=".SignUpActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustUnspecified">
             <meta-data

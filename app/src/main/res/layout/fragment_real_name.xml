@@ -9,163 +9,163 @@
 
     <!--뒤로가기 버튼-->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/backtraking_btn_guide_ver_left"
+        android:id="@+id/backBtnGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.02"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/backtraking_btn_guide_hor_top"
+        android:id="@+id/backBtnGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.017"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/backtraing_btn_guide_hor_bottom"
+        android:id="@+id/backBtnGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.0687"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/backtraking_btn_guide_ver_right"
+        android:id="@+id/backBtnGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.25"/>
     <!-- 텍스트 공용 라인 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/text_guide_ver_left"
+        android:id="@+id/textSharingGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.045"/>
     <!-- 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTextGuide_ver_right"
+        android:id="@+id/nameTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.59"/>
+        app:layout_constraintGuide_percent="0.55"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTextGuide_hor_top"
+        android:id="@+id/nameTitleTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.092"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/bigTextGuide_hor_bottom"
+        android:id="@+id/nameTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.156"/>
     <!-- 그 밑에 좀 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTextGuide_hor_bottom"
+        android:id="@+id/nameSubTitleTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.187"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTextGuide_ver_right"
+        android:id="@+id/nameSubTitleTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.443"/>
     <!-- 인풋 위의 조금 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smalltextGUide2_ver_right"
+        android:id="@+id/nameSubTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.32"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTextGuide2_hor_top"
+        android:id="@+id/nameSubTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.359"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/smallTextGuide2_hor_bottom"
+        android:id="@+id/nameSubTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.38"/>
     <!-- 인풋 창 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/nameInputGuide_ver_right"
+        android:id="@+id/nameInputBoxGuideRight"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.944"/>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/nameInputGuide_hor_bottom"
+        android:id="@+id/nameInputBoxGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.444"/>
     <!-- 다음 단계로 버튼 -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/nextStageBtnGuide_hor_top"
+        android:id="@+id/nextStepBtnGuideTop"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.896"/>
 
     <ImageButton
-        android:id="@+id/backTraking_btn"
+        android:id="@+id/backBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/backtraking_btn_guide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/backtraking_btn_guide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/backtraking_btn_guide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/backtraing_btn_guide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/backBtnGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/backBtnGuideRight"
+        app:layout_constraintTop_toTopOf="@id/backBtnGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/backBtnGuideBottom"
         android:background="@drawable/backtracking_button_image"/>
     <TextView
-        android:id="@+id/bigText"
+        android:id="@+id/nameTitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/text_guide_ver_left"
-        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/bigTextGuide_hor_bottom"
-        app:layout_constraintEnd_toEndOf="@id/bigTextGuide_ver_right"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/nameTitleTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/nameTitleTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/nameTitleTextGuideRight"
         android:text="@string/welcome_sin_up"
         android:fontFamily="@font/pretendard_extrabold"
         android:textSize="32.64sp"
         android:textColor="@color/black"/>
     <TextView
-        android:id="@+id/smallText1"
+        android:id="@+id/nameSubTitleText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/text_guide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/smallTextGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/nameSubTitleTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/nameTitleTextGuideBottom"
+        app:layout_constraintBottom_toBottomOf="@id/nameSubTitleTextGuideBottom"
         android:text="@string/welcome_Hi"
         android:fontFamily="@font/pretendard_semibold"
         android:textColor="@color/hint_black1"
         android:textSize="15.36sp"/>
     <TextView
-        android:id="@+id/vellySmallText"
+        android:id="@+id/nameSubText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/text_guide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/smalltextGUide2_ver_right"
-        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_top"
-        app:layout_constraintBottom_toBottomOf="@id/smallTextGuide2_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/nameSubTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/nameSubTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/nameSubTextGuideBottom"
         android:text="@string/what_is_name"
         android:fontFamily="@font/pretendard_medium"
         android:textSize="11sp"
         android:textColor="@color/hint_black2"/>
 
     <EditText
-        android:id="@+id/input_text_name"
+        android:id="@+id/nameInputBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:backgroundTint="@drawable/focus_point"
-        app:layout_constraintStart_toStartOf="@id/text_guide_ver_left"
-        app:layout_constraintEnd_toEndOf="@id/nameInputGuide_ver_right"
-        app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/nameInputGuide_hor_bottom"
+        app:layout_constraintStart_toStartOf="@id/textSharingGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/nameInputBoxGuideRight"
+        app:layout_constraintTop_toTopOf="@id/nameSubTextGuideBottom"
+        app:layout_constraintBottom_toBottomOf="@id/nameInputBoxGuideBottom"
         android:hint="@string/name_edit"
         android:textColorHint="@color/hint_black1"
         android:fontFamily="@font/pretendard_medium"
@@ -173,13 +173,13 @@
         android:inputType="textPersonName"
         />
     <Button
-        android:id="@+id/next_stage_btn"
+        android:id="@+id/nextStepBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/nextStageBtnGuide_hor_top"
+        app:layout_constraintTop_toTopOf="@id/nextStepBtnGuideTop"
         android:background="@color/hint_black1"
         android:text="@string/next_stage"
         android:textSize="23sp"

@@ -49,5 +49,5 @@
         android:id="@+id/lastSinUpFragment"
         android:name="com.example.hiprojecttest.fragment.LastSinUpFragment"
         android:label="fragment_last_sin_up"
-        tools:layout="@layout/fragment_last_sin_up" />
+        tools:layout="@layout/fragment_last_sign_up" />
 </navigation>

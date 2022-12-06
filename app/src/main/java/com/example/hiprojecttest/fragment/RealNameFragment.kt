@@ -35,24 +35,24 @@ class RealNameFragment : Fragment() {
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
-        var setting = binding.inputTextName.toString()
+        var setting = binding.nameInputBox.toString()
 
 
-        binding.inputTextName.setOnTextChanged { p0, p1, p2, p3 ->
+        binding.nameInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
                 Log.d("TAG", "is not NULL ")
-                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
-                binding.nextStageBtn.setOnClickListener {
+                binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
+                binding.nextStepBtn.setOnClickListener {
                     Log.d("TAG", "onClick")
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
                 }
             }
             else if(p0.isNullOrBlank()){
-                binding.nextStageBtn.setBackgroundColor(resources.getColor(R.color.hint_black1))
+                binding.nextStepBtn.setBackgroundColor(resources.getColor(R.color.hint_black1))
             }
         }
 
-        binding.backTrakingBtn.setOnClickListener{
+        binding.backBtn.setOnClickListener{
             val intent = Intent(activity,MainActivity::class.java)
             startActivity(intent)
 

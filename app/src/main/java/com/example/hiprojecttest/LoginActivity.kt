@@ -12,17 +12,17 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        var email = binding.inputTextEmail.toString()
-        var pass = binding.inputPass.toString()
+        var email = binding.emailInputBox.toString()
+        var pass = binding.passwordInputBox.toString()
         binding.goBackButton.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.exit_to_right, R.anim.exit_to_right)
         }
 
-        binding.inputPass.setOnTextChanged { p0, p1, p2, p3 ->
+        binding.passwordInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
+                binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
             }
         }
 

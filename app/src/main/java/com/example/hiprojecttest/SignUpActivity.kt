@@ -7,13 +7,13 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 
 
-class SinUpActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
     lateinit var navController: NavController
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sinup)
+        setContentView(R.layout.activity_signup)
 
 
         navController =
