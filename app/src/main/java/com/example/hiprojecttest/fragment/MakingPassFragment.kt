@@ -29,19 +29,19 @@ class MakingPassFragment : Fragment() {
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
-        var newPass = binding.inputNewPass.toString()
-        var checkingPass = binding.reinputPass.toString()
+        var newPass = binding.passwordInputBox.toString()
+        var checkingPass = binding.passInputBox.toString()
 
-        binding.reinputPass.setOnTextChanged { p0, p1, p2, p3 ->
+        binding.passInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
-                binding.nextStageBtn.setOnClickListener {
+                binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
+                binding.nextStepBtn.setOnClickListener {
                     navController.navigate(R.id.action_makingPassFragment_to_lastSinUpFragment)
                 }
             }
         }
 
-        binding.goBackButton.setOnClickListener {
+        binding.nextStepBtn.setOnClickListener {
             navController.popBackStack()
         }
     }

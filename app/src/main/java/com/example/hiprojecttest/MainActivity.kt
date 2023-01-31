@@ -14,15 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.logInButton.setOnClickListener{
+        binding.doLoginBtn.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)
         }
 
-        binding.sinUpButton.setOnClickListener{
+        binding.doSignupBtn.setOnClickListener{
 
-            val intent = Intent(this,SinUpActivity::class.java)
+            val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)
         }

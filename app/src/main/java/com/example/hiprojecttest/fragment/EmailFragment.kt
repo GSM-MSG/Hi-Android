@@ -25,18 +25,18 @@ class EmailFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
-        var setting = binding.inputTextEmail.toString()
+        var setting = binding.emailInputBox.toString()
         var data = setting.substring(6 until 15)
         var emailGuide = "@gsm.hs.kr"
 
-        binding.inputTextEmail.setOnTextChanged { p0, p1, p2, p3 ->
+        binding.emailInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.postEmail.setOnClickListener {
+                binding.sendEmailBtn.setOnClickListener {
                     navController.navigate(R.id.action_e_mailFragment_to_emailProveFragment)
                 }
             }
         }
-        binding.backTrakingBtn.setOnClickListener {
+        binding.backBtn.setOnClickListener {
             navController.popBackStack()
         }
         
