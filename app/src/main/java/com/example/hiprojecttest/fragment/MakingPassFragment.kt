@@ -20,7 +20,7 @@ class MakingPassFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding =FragmentMakingPassBinding.inflate(inflater,container,false)
+        binding = FragmentMakingPassBinding.inflate(inflater,container,false)
         return binding.root
     }
     @SuppressLint("ResourceAsColor")
