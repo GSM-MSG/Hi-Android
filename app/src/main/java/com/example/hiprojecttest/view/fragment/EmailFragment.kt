@@ -1,17 +1,21 @@
-package com.example.hiprojecttest.fragment
+package com.example.hiprojecttest.view.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEMailBinding
+import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.model.retrofit.CommunicationWork
 import com.example.hiprojecttest.setOnTextChanged
-import java.util.regex.Pattern
+
 
 class EmailFragment : Fragment(){
     lateinit var navController: NavController
@@ -32,7 +36,14 @@ class EmailFragment : Fragment(){
         binding.emailInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
                 binding.sendEmailBtn.setOnClickListener {
-                    navController.navigate(R.id.action_e_mailFragment_to_emailProveFragment)
+
+                    val userEmailData = EmailSendDTO(
+                        binding.emailInputBox.text.toString()
+                    )
+                    Log.d("TAG","$userEmailData")
+                    val emailSendWork = CommunicationWork()
+                    emailSendWork.sendEamil(userEmailData)
+                    navController.navigate(R.id.action_e_mailFragment_to_emailProveFragment, bundleOf("email" to userEmailData))
                 }
             }
         }
@@ -43,3 +54,5 @@ class EmailFragment : Fragment(){
     }
 
 }
+
+

@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.fragment
+package com.example.hiprojecttest.view.fragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,13 +9,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import com.example.hiprojecttest.MainActivity
+import com.example.hiprojecttest.view.MainActivity
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentRealNameBinding
 import com.example.hiprojecttest.setOnTextChanged
+import kotlinx.android.synthetic.main.fragment_real_name.*
 
 
 class RealNameFragment : Fragment() {
@@ -35,7 +37,6 @@ class RealNameFragment : Fragment() {
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
-        var setting = binding.nameInputBox.toString()
 
 
         binding.nameInputBox.setOnTextChanged { p0, p1, p2, p3 ->
@@ -44,6 +45,9 @@ class RealNameFragment : Fragment() {
                 binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
                 binding.nextStepBtn.setOnClickListener {
                     Log.d("TAG", "onClick")
+                    val name = binding.nameInputBox.text.toString()
+                    val studentId = binding.studentIdInputBox.text.toString()
+
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
                 }
             }
@@ -53,13 +57,11 @@ class RealNameFragment : Fragment() {
         }
 
         binding.backBtn.setOnClickListener{
-            val intent = Intent(activity,MainActivity::class.java)
+            val intent = Intent(activity, MainActivity::class.java)
             startActivity(intent)
 
         }
     }
-
-
 
 
 }

@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.fragment
+package com.example.hiprojecttest.view.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -31,6 +31,7 @@ class MakingPassFragment : Fragment() {
 
         var newPass = binding.passwordInputBox.toString()
         var checkingPass = binding.passInputBox.toString()
+
 
         binding.passInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
