@@ -1,8 +1,8 @@
-package com.example.hiprojecttest.model.service
+package com.example.hiprojecttest.service
 
 import androidx.core.content.UnusedAppRestrictionsBackportService
-import com.example.hiprojecttest.model.dto.auth.request.SignUpDTO
-import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.dto.auth.request.SignUpDTO
+import com.example.hiprojecttest.dto.email.request.EmailSendDTO
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.Body

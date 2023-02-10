@@ -9,9 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEmailProveBinding
-import com.example.hiprojecttest.model.retrofit.CommunicationWork
+import com.example.hiprojecttest.retrofit.CommunicationWork
 import com.example.hiprojecttest.setOnTextChanged
 
 
@@ -19,6 +20,7 @@ class EmailProveFragment : Fragment() {
 
     lateinit var navController: NavController
     private lateinit var binding: FragmentEmailProveBinding
+    private val args: EmailProveFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -32,7 +34,7 @@ class EmailProveFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
-        val emailInfo = arguments?.getString("email")
+        val emailInfo = args.email.toString()
 
         binding.emailProveInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){

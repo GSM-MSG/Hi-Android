@@ -1,11 +1,11 @@
-package com.example.hiprojecttest.model.retrofit
+package com.example.hiprojecttest.retrofit
 
 import android.content.Context
 import android.util.Log
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.hiprojecttest.R
-import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.dto.email.request.EmailSendDTO
 import com.example.hiprojecttest.view.fragment.EmailFragment
 import com.example.hiprojecttest.view.fragment.EmailProveFragment
 import retrofit2.Call

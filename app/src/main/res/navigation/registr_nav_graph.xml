@@ -25,9 +25,7 @@
             android:id="@+id/action_e_mailFragment_to_emailProveFragment"
             app:destination="@id/emailProveFragment"
             app:popUpTo="@id/emailProveFragment"/>
-        <argument
-            android:name="email"
-            app:argType="String"/>
+
     </fragment>
     <fragment
         android:id="@+id/emailProveFragment"
@@ -38,6 +36,9 @@
             android:id="@+id/action_emailProveFragment_to_makingPassFragment"
             app:destination="@id/makingPassFragment"
             app:popUpTo="@id/makingPassFragment"/>
+        <argument
+            android:name="email"
+            app:argType="String"/>
     </fragment>
     <fragment
         android:id="@+id/makingPassFragment"
