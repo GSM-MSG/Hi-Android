@@ -38,7 +38,7 @@
             app:popUpTo="@id/makingPassFragment"/>
         <argument
             android:name="email"
-            app:argType="String"/>
+            app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/makingPassFragment"

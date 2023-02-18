@@ -1,6 +1,5 @@
 package com.example.hiprojecttest.service
 
-import androidx.core.content.UnusedAppRestrictionsBackportService
 import com.example.hiprojecttest.dto.auth.request.SignUpDTO
 import com.example.hiprojecttest.dto.email.request.EmailSendDTO
 import retrofit2.Call
@@ -8,10 +7,8 @@ import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.HEAD
 import retrofit2.http.Headers
-
 import retrofit2.http.POST
 import retrofit2.http.Query
-import retrofit2.http.QueryMap
 
 interface SignUpService {
     @Headers("Content-Type: application/json")
@@ -23,10 +20,10 @@ interface SignUpService {
     fun sendEmail(@Body emailInfo: EmailSendDTO):Call<Unit>
 
     @Headers("Content-Type: application/json")
-    @HEAD("/email/")
-    fun emailCheck(
+    @HEAD("/email")
+    suspend fun emailCheck(
         @Query("email")email: String,
         @Query("authKey")authKey: String
-    ): Call<Unit>
+    ): Response<Void>
 
 }
