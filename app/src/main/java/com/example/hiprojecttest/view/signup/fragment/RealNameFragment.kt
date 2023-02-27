@@ -8,8 +8,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -38,22 +40,27 @@ class RealNameFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
-        var signUpViewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
+        val signUpViewModel by activityViewModels<SignUpViewModel>()
 
         binding.nameInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
                 Log.d("TAG", "is not NULL ")
                 binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
-                binding.nextStepBtn.setOnClickListener {
-                    Log.d("TAG", "onClick")
-                    signUpViewModel.name = binding.nameInputBox.text.toString()
-                    signUpViewModel.studentId = binding.studentIdInputBox.text.toString()
-
-                    navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
-                }
             }
             else if(p0.isNullOrBlank()){
                 binding.nextStepBtn.setBackgroundColor(resources.getColor(R.color.hint_black1))
+            }
+        }
+        binding.nextStepBtn.setOnClickListener {
+            Log.d("TAG", "onClick")
+            val userName = binding.nameInputBox.text.toString()
+            val studentId = binding.studentIdInputBox.text.toString()
+            signUpViewModel.nameDataRequest(userName)
+            signUpViewModel.studentIdDataRequest(studentId)
+            if (!userName.isNullOrBlank() && !studentId.isNullOrBlank())
+                navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
+            else{
+                Toast.makeText(context,"이름 입력란과 학번 입력란이 비어있습니다",Toast.LENGTH_SHORT).show()
             }
         }
 

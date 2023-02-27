@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -32,28 +33,22 @@ class EmailFragment : Fragment(){
 
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
-        var signUpViewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
+        val signUpViewModel by activityViewModels<SignUpViewModel>()
 
-        var setting = binding.emailInputBox.toString()
-        var data = setting.substring(6 until 15)
-        var emailGuide = "@gsm.hs.kr"
-
+        binding.sendEmailBtn.setOnClickListener {
+            val emailRequest = EmailSendDTO(signUpViewModel.emailDataRequest.value!!)
+            Log.d("TAG","$emailRequest")
+            val emailSendWork = CommunicationWork()
+            emailSendWork.sendEamil(emailRequest)
+            findNavController().navigate(R.id.action_e_mailFragment_to_emailProveFragment)
+        }
         binding.emailInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.sendEmailBtn.setOnClickListener {
-                    val emailInfo = binding.emailInputBox.text.toString()
-                    val userEmailData = EmailSendDTO(
-                        emailInfo
-                    )
-                    val action = EmailFragmentDirections.actionEMailFragmentToEmailProveFragment(email = emailInfo)
-                    Log.d("TAG","$userEmailData")
-                    val emailSendWork = CommunicationWork()
-                    emailSendWork.sendEamil(userEmailData)
-                    findNavController().navigate(action)
-                    signUpViewModel.userEmail = binding.emailInputBox.text.toString()
-                }
+                val emailInfo = binding.emailInputBox.text.toString()
+                signUpViewModel.emailDataRequest(emailInfo)
             }
         }
+
         binding.backBtn.setOnClickListener {
             navController.popBackStack()
         }
