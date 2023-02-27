@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view.fragment
+package com.example.hiprojecttest.view.signup.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -10,11 +10,12 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEmailProveBinding
-import com.example.hiprojecttest.dto.email.request.EmailSendDTO
-import com.example.hiprojecttest.retrofit.CommunicationWork
+import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.model.retrofit.CommunicationWork
 import com.example.hiprojecttest.setOnTextChanged
 import kotlinx.coroutines.launch
 
@@ -48,7 +49,9 @@ class EmailProveFragment : Fragment() {
                     val authKey = binding.emailProveInputBox.text.toString()
                     Log.d("TAG", "${email},${authKey}")
                     lifecycleScope.launch {
-                        retrofitWork.checkEmailCode(email, authKey)
+                        retrofitWork.checkEmailCode(email, authKey, successAction = {
+                            findNavController().navigate(R.id.action_emailProveFragment_to_makingPassFragment)
+                        })
                     }
 
                 }

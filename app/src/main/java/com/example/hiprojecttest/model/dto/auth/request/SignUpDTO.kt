@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.dto.auth.request
+package com.example.hiprojecttest.model.dto.auth.request
 
 data class SignUpDTO(
     val memberEmail: String,

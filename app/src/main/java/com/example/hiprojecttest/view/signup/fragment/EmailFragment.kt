@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view.fragment
+package com.example.hiprojecttest.view.signup.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,14 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEMailBinding
-import com.example.hiprojecttest.dto.email.request.EmailSendDTO
-import com.example.hiprojecttest.retrofit.CommunicationWork
+import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.model.retrofit.CommunicationWork
 import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.viewmodel.SignUpViewModel
 
 
 class EmailFragment : Fragment(){
@@ -30,6 +32,8 @@ class EmailFragment : Fragment(){
 
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
+        var signUpViewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
+
         var setting = binding.emailInputBox.toString()
         var data = setting.substring(6 until 15)
         var emailGuide = "@gsm.hs.kr"
@@ -46,6 +50,7 @@ class EmailFragment : Fragment(){
                     val emailSendWork = CommunicationWork()
                     emailSendWork.sendEamil(userEmailData)
                     findNavController().navigate(action)
+                    signUpViewModel.userEmail = binding.emailInputBox.text.toString()
                 }
             }
         }

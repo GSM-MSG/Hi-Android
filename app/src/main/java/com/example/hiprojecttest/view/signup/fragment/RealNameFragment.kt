@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view.fragment
+package com.example.hiprojecttest.view.signup.fragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,26 +9,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.hiprojecttest.view.MainActivity
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentRealNameBinding
 import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.viewmodel.SignUpViewModel
 import kotlinx.android.synthetic.main.fragment_real_name.*
 
 
-class RealNameFragment : Fragment() {
+class RealNameFragment : Fragment(){
     lateinit var navController: NavController
     private lateinit var binding: FragmentRealNameBinding
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding= FragmentRealNameBinding.inflate(inflater,container,false)
+        binding = FragmentRealNameBinding.inflate(inflater,container,false)
         return binding.root
 
     }
+
 
     @SuppressLint("ResourceType")
     @RequiresApi(Build.VERSION_CODES.M)
@@ -36,8 +38,7 @@ class RealNameFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
-
-
+        var signUpViewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
 
         binding.nameInputBox.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
@@ -45,8 +46,8 @@ class RealNameFragment : Fragment() {
                 binding.nextStepBtn.setBackground(resources.getDrawable(R.drawable.gradient_btn))
                 binding.nextStepBtn.setOnClickListener {
                     Log.d("TAG", "onClick")
-                    val name = binding.nameInputBox.text.toString()
-                    val studentId = binding.studentIdInputBox.text.toString()
+                    signUpViewModel.name = binding.nameInputBox.text.toString()
+                    signUpViewModel.studentId = binding.studentIdInputBox.text.toString()
 
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
                 }
@@ -62,8 +63,6 @@ class RealNameFragment : Fragment() {
 
         }
     }
-
-
 }
 
 

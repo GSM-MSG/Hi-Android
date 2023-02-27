@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/real_nameFragment"
-        android:name="com.example.hiprojecttest.view.fragment.RealNameFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.RealNameFragment"
         android:label="fragment_real_name"
         tools:layout="@layout/fragment_real_name" >
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/e_mailFragment"
-        android:name="com.example.hiprojecttest.view.fragment.EmailFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.EmailFragment"
         android:label="fragment_e_mail"
         tools:layout="@layout/fragment_e_mail" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/emailProveFragment"
-        android:name="com.example.hiprojecttest.view.fragment.EmailProveFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.EmailProveFragment"
         android:label="fragment_email_prove"
         tools:layout="@layout/fragment_email_prove" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/makingPassFragment"
-        android:name="com.example.hiprojecttest.view.fragment.MakingPassFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.MakingPassFragment"
         android:label="fragment_making_pass"
         tools:layout="@layout/fragment_making_pass" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/lastSinUpFragment"
-        android:name="com.example.hiprojecttest.view.fragment.LastSinUpFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.LastSinUpFragment"
         android:label="fragment_last_sin_up"
         tools:layout="@layout/fragment_last_sign_up" />
 </navigation>

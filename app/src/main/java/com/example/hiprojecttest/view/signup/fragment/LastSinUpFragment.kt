@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view.fragment
+package com.example.hiprojecttest.view.signup.fragment
 
 import android.content.Intent
 import android.os.Bundle

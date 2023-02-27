@@ -22,14 +22,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".view.LoginActivity"
+            android:name=".view.login.LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".view.SignUpActivity"
+            android:name=".view.signup.SignUpActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustUnspecified">
             <meta-data

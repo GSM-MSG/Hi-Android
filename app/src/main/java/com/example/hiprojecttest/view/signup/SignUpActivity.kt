@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view
+package com.example.hiprojecttest.view.signup
 
 
 import androidx.appcompat.app.AppCompatActivity

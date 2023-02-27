@@ -1,4 +1,4 @@
-package com.example.hiprojecttest.view
+package com.example.hiprojecttest.view.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.ActivityLoginBinding
 import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.view.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding

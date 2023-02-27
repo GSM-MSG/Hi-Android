@@ -1,7 +1,6 @@
-package com.example.hiprojecttest.service
+package com.example.hiprojecttest.model.service
 
-import com.example.hiprojecttest.dto.auth.request.SignUpDTO
-import com.example.hiprojecttest.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.Body
@@ -10,11 +9,7 @@ import retrofit2.http.Headers
 import retrofit2.http.POST
 import retrofit2.http.Query
 
-interface SignUpService {
-    @Headers("Content-Type: application/json")
-    @POST("/auth/signup")
-    fun signUp(@Body signupInfo: SignUpDTO): Call<Unit>
-
+interface EmailService {
     @Headers("Content-Type: application/json")
     @POST("/email/send")
     fun sendEmail(@Body emailInfo: EmailSendDTO):Call<Unit>

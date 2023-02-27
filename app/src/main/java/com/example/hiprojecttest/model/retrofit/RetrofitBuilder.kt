@@ -1,6 +1,7 @@
-package com.example.hiprojecttest.retrofit
+package com.example.hiprojecttest.model.retrofit
 
-import com.example.hiprojecttest.service.SignUpService
+import com.example.hiprojecttest.model.service.AuthService
+import com.example.hiprojecttest.model.service.EmailService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -14,7 +15,10 @@ object RetrofitBuilder {
             .build()
     }
 
-    val signUpService: SignUpService by lazy {
-        retrofit.create(SignUpService::class.java)
+    val emailService: EmailService by lazy {
+        retrofit.create(EmailService::class.java)
+    }
+    val authService: AuthService by lazy {
+        retrofit.create(AuthService::class.java)
     }
 }
