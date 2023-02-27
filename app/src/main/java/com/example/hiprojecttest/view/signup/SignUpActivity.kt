@@ -1,10 +1,11 @@
-package com.example.hiprojecttest
+package com.example.hiprojecttest.view.signup
 
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.hiprojecttest.R
 
 
 class SignUpActivity : AppCompatActivity() {

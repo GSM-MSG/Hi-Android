@@ -1,9 +1,12 @@
-package com.example.hiprojecttest
+package com.example.hiprojecttest.view.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.ActivityLoginBinding
+import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.view.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -15,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
         var email = binding.emailInputBox.toString()
         var pass = binding.passwordInputBox.toString()
         binding.goBackButton.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.exit_to_right, R.anim.exit_to_right)
         }

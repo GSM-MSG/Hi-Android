@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/real_nameFragment"
-        android:name="com.example.hiprojecttest.fragment.RealNameFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.RealNameFragment"
         android:label="fragment_real_name"
         tools:layout="@layout/fragment_real_name" >
         <action
@@ -18,27 +18,31 @@
 
     <fragment
         android:id="@+id/e_mailFragment"
-        android:name="com.example.hiprojecttest.fragment.EmailFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.EmailFragment"
         android:label="fragment_e_mail"
         tools:layout="@layout/fragment_e_mail" >
         <action
             android:id="@+id/action_e_mailFragment_to_emailProveFragment"
             app:destination="@id/emailProveFragment"
             app:popUpTo="@id/emailProveFragment"/>
+
     </fragment>
     <fragment
         android:id="@+id/emailProveFragment"
-        android:name="com.example.hiprojecttest.fragment.EmailProveFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.EmailProveFragment"
         android:label="fragment_email_prove"
         tools:layout="@layout/fragment_email_prove" >
         <action
             android:id="@+id/action_emailProveFragment_to_makingPassFragment"
             app:destination="@id/makingPassFragment"
             app:popUpTo="@id/makingPassFragment"/>
+        <argument
+            android:name="email"
+            app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/makingPassFragment"
-        android:name="com.example.hiprojecttest.fragment.MakingPassFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.MakingPassFragment"
         android:label="fragment_making_pass"
         tools:layout="@layout/fragment_making_pass" >
         <action
@@ -47,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/lastSinUpFragment"
-        android:name="com.example.hiprojecttest.fragment.LastSinUpFragment"
+        android:name="com.example.hiprojecttest.view.signup.fragment.LastSinUpFragment"
         android:label="fragment_last_sin_up"
         tools:layout="@layout/fragment_last_sign_up" />
 </navigation>
