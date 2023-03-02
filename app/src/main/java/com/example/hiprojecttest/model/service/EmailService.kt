@@ -10,11 +10,9 @@ import retrofit2.http.POST
 import retrofit2.http.Query
 
 interface EmailService {
-    @Headers("Content-Type: application/json")
     @POST("/email/send")
     fun sendEmail(@Body emailInfo: EmailSendDTO):Call<Unit>
 
-    @Headers("Content-Type: application/json")
     @HEAD("/email")
     suspend fun emailCheck(
         @Query("email")email: String,

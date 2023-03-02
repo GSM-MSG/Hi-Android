@@ -18,7 +18,8 @@ class SignUpActivity : AppCompatActivity() {
 
 
         navController =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_email)!!.findNavController()
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_email)!!
+                .findNavController()
 
     }
 }

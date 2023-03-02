@@ -2,11 +2,18 @@ package com.example.hiprojecttest.model.retrofit
 
 import com.example.hiprojecttest.model.service.AuthService
 import com.example.hiprojecttest.model.service.EmailService
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
     private const val BASE_URL = "https://port-0-hi-backend-1b5xkk2fldr011vx.gksl2.cloudtype.app/"
+
+    private val client: OkHttpClient by lazy {
+        OkHttpClient.Builder()
+            .addInterceptor(AuthIntercepter())
+            .build()
+    }
 
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
