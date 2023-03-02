@@ -8,17 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEmailProveBinding
 import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
 import com.example.hiprojecttest.model.retrofit.CommunicationWork
-import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.util.setOnTextChanged
 import com.example.hiprojecttest.viewmodel.SignUpViewModel
 import kotlinx.coroutines.launch
 

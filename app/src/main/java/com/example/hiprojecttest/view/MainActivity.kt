@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.doSignupBtn.setOnClickListener{
-
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.enter_from_right, R.anim.enter_from_right)

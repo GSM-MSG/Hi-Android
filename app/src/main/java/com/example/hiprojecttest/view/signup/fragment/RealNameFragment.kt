@@ -12,13 +12,12 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.hiprojecttest.view.MainActivity
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentRealNameBinding
-import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.util.setOnTextChanged
 import com.example.hiprojecttest.viewmodel.SignUpViewModel
 import kotlinx.android.synthetic.main.fragment_real_name.*
 
