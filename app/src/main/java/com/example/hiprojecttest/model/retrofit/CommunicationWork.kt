@@ -1,20 +1,23 @@
 package com.example.hiprojecttest.model.retrofit
 
+import android.content.Intent
 import android.util.Log
+import android.widget.Toast
 import com.example.hiprojecttest.model.dto.auth.request.LogInDTO
 import com.example.hiprojecttest.model.dto.auth.request.SignUpDTO
 import com.example.hiprojecttest.model.dto.auth.response.LogInResponseDTO
 import com.example.hiprojecttest.model.dto.email.request.EmailSendDTO
+import com.example.hiprojecttest.util.shortToastMessage
+import com.example.hiprojecttest.view.login.LoginActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.Objects
 
 
 class CommunicationWork {
     val emailService = RetrofitBuilder.emailService
     val authService = RetrofitBuilder.authService
-    fun logIn(logInInfo: LogInDTO){
+    fun logIn(logInInfo: LogInDTO, activity : LoginActivity){
         authService.logIn(logInInfo)
             .enqueue(object : Callback<LogInResponseDTO>{
                 override fun onResponse(call: Call<LogInResponseDTO>, response: Response<LogInResponseDTO>) {
@@ -25,9 +28,11 @@ class CommunicationWork {
                         }
                         400 ->{
                             Log.d("비밀번호가 다름", "$result")
+                            shortToastMessage("비밀번호가 일치하지 않습니다", activity)
                         }
                         404 ->{
                             Log.d("존재하지 않는 사용자 입니다", "$result")
+                            shortToastMessage("존재하지 않는 사용자 입니다", activity)
                         }
                     }
                 }

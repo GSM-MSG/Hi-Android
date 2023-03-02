@@ -7,7 +7,7 @@ import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.ActivityLoginBinding
 import com.example.hiprojecttest.model.dto.auth.request.LogInDTO
 import com.example.hiprojecttest.model.retrofit.CommunicationWork
-import com.example.hiprojecttest.setOnTextChanged
+import com.example.hiprojecttest.util.setOnTextChanged
 import com.example.hiprojecttest.view.MainActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
                 binding.passwordInputBox.text.toString()
             )
             val logInWork = CommunicationWork()
-            logInWork.logIn(logInData)
+            logInWork.logIn(logInData, this)
         }
     }
 }

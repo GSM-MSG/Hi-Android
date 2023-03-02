@@ -1,10 +1,12 @@
 package com.example.hiprojecttest.util
 
 
+import android.content.Context
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
@@ -37,4 +39,8 @@ fun NavController.navigateSafeUp(@IdRes currentFragmentResId: Int) {
     if (currentDestination?.id == currentFragmentResId) {
         navigateUp()
     }
+}
+
+fun shortToastMessage(message: String, context: Context){
+    Toast.makeText(context,message,Toast.LENGTH_SHORT).show()
 }
