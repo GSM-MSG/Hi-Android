@@ -226,21 +226,17 @@
         android:id="@+id/nextStepBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/nextStepBtnGuideTop"
         android:background="@color/hint_black1"
+        android:fontFamily="@font/pretendard_semibold"
         android:text="@string/login_go"
         android:textColor="@color/white"
-        android:fontFamily="@font/pretendard_semibold"
-        android:textSize="23sp"/>
-
-
-
-
-
-
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nextStepBtnGuideTop"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
